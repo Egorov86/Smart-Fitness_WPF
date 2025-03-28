@@ -26,7 +26,6 @@ namespace Smart_Fitness_WPF
             MessageBox.Show("Вход на стр 6.");
             InitializeComponent();
             LoadUserName();
-            //this.UserID = 0;
         }
 
         private void LoadUserName()
@@ -70,8 +69,6 @@ namespace Smart_Fitness_WPF
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            // Логика для возврата на предыдущую страницу
-            //this.Close(); // Закрываем текущее окно (можно заменить на навигацию)
         }
     }
 }

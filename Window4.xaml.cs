@@ -19,24 +19,23 @@ namespace Smart_Fitness_WPF
     public partial class Window4 : Window
     {
         private string connectionString = "Server=DESKTOP-3AN1TNE\\SQLEXPRESS;Database=Smart-Fitness_WPF;Integrated Security=True;";
-        private int UserID; // Хранит ID текущего пользователя
+        private int UserID;
 
-        public Window4(int userId) // Передаем ID пользователя при инициализации окна
+        public Window4(int userId)
         {
             InitializeComponent();
-            UserID = userId; // Сохраняем ID пользователя
+            UserID = userId; 
             LoadTrainings();
         }
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            // Предположим, что вы проверили логин и пароль
             int userId = UserID;
 
-            if (userId != -1) // Если пользователь найден
+            if (userId != -1) 
             {
                 Window4 window4 = new Window4(userId);
                 window4.Show();
-                this.Close(); // Закрываем текущее окно
+                this.Close(); 
             }
             else
             {

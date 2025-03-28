@@ -30,24 +30,20 @@ namespace Smart_Fitness_WPF
         }
         private void LoadComboBoxes()
         {
-            // Заполнение ComboBox для возраста от 18 до 60
             for (int i = 18; i <= 60; i++)
             {
                 txtAge.Items.Add(i);
             }
 
-            // Заполнение ComboBox для роста от 145 до 195
             for (decimal i = 145; i <= 195; i++)
             {
                 txtHeight.Items.Add(i);
             }
 
-            // Заполнение ComboBox для веса от 50 до 120
             for (decimal i = 50; i <= 120; i++)
             {
                 txtWeight.Items.Add(i);
             }
-            //txtRole.Visibility = System.Windows.Visibility.Collapsed;
             txtRole.Items.Add("Client");
             txtRole.Items.Add("Traner");
         }
@@ -111,7 +107,7 @@ namespace Smart_Fitness_WPF
             string json = JsonConvert.SerializeObject(user, Formatting.Indented);
             string filePath = "users.json"; // Путь к файлу
 
-            // Сохранение JSON в файл
+            // Сохраняю JSON на всякий случай
             try
             {
                 File.AppendAllText(filePath, json + Environment.NewLine);
