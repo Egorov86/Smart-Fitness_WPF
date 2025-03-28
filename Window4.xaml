@@ -1,0 +1,17 @@
+﻿<Window x:Class="Smart_Fitness_WPF.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Расписание тренировок" Height="450" Width="800" Icon="/Fitness_icon.ico">
+    <Grid>
+        <ListView Name="TrainingsListView" SelectionMode="Single" Margin="10" Height="350">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID Тренировки" DisplayMemberBinding="{Binding TrainingID}" Width="100"/>
+                    <GridViewColumn Header="Дата и Время" DisplayMemberBinding="{Binding DateTime}" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Записаться на тренировку" Click="RegisterButton_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="100,0,0,15"/>
+        <Button Content="&lt;- назад" HorizontalAlignment="Left" Margin="30,0,0,15" VerticalAlignment="Top" Width="60" Click="Button_Click"/>
+    </Grid>
+</Window>

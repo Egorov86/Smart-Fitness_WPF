@@ -1,0 +1,57 @@
+﻿<Window x:Class="Smart_Fitness_WPF.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smart_Fitness_WPF"
+        mc:Ignorable="d"
+        Title="Редактирование профиля" Height="450" Width="800" Icon="/Fitness_icon.ico">
+    <Grid AutomationProperties.Name="Window3">
+        <Grid.Background>
+            <ImageBrush ImageSource="/sportSTR.jpg"/>
+        </Grid.Background>
+
+        <!-- Имя -->
+        <TextBlock HorizontalAlignment="Left" Margin="10,28,0,0" TextWrapping="Wrap" Text="Введите имя:" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="126,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="25" FontSize="16"/>
+
+        <!-- Возраст -->
+        <TextBlock HorizontalAlignment="Left" Margin="10,77,0,0" TextWrapping="Wrap" Text="Возраст:" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="txtAge" HorizontalAlignment="Left" Margin="126,79,0,0" VerticalAlignment="Top" Width="194" Height="25" FontSize="16">
+            <ComboBoxItem Content="18"/>
+            <ComboBoxItem Content="19"/>
+            <ComboBoxItem Content="20"/>
+            <!-- Добавьте остальные значения возраста по мере необходимости -->
+        </ComboBox>
+
+        <!-- Рост -->
+        <TextBlock HorizontalAlignment="Left" Margin="10,120,0,0" TextWrapping="Wrap" Text="Рост (см):" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Margin="126,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="25" FontSize="16"/>
+
+        <!-- Вес -->
+        <TextBlock HorizontalAlignment="Left" Margin="10,160,0,0" TextWrapping="Wrap" Text="Вес (кг):" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Margin="126,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="25" FontSize="16"/>
+
+        <!-- Телефон -->
+        <TextBlock HorizontalAlignment="Left" Margin="10,200,0,0" TextWrapping="Wrap" Text="Телефон:" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Margin="126,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="25" FontSize="16"/>
+
+        <!-- Пароль -->
+        <TextBlock HorizontalAlignment="Left" Margin="10,240,0,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top" FontSize="16"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="126,246,0,0" VerticalAlignment="Top" Width="194" Height="25"/>
+
+        <!-- Роль -->
+        <TextBlock HorizontalAlignment="Left" Margin="10,280,0,0" TextWrapping="Wrap" Text="Роль:" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="txtRole" HorizontalAlignment="Left" Margin="126,286,0,0" VerticalAlignment="Top" Width="194" Height="25">
+            <ComboBoxItem Content="Пользователь"/>
+            <ComboBoxItem Content="Администратор"/>
+            <!-- Добавьте другие роли по мере необходимости -->
+        </ComboBox>
+
+        <!-- Кнопка сохранения -->
+        <Button Content="Сохранить профиль" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Width="120" Height="30"
+                Click="SaveProfile_Click"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="150,320,0,0" VerticalAlignment="Top" Width="120" Height="30"
+                Click="Button_Click"/>
+    </Grid>
+</Window>

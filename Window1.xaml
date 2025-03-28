@@ -1,0 +1,177 @@
+﻿<Window x:Class="Smart_Fitness_WPF.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smart_Fitness_WPF"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="800" Icon="/Save.png">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/sportReg.jpg"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="10,23,0,0" TextWrapping="Wrap" Text="введите имя" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="29" Width="115" FontSize="16">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.145"/>
+                    <RotateTransform Angle="0.278"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="126,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="25" AutomationProperties.Name="txtName" TextBlock.FontSize="16">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,77,0,0" TextWrapping="Wrap" Text="возраст" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="27" Width="115" FontSize="16">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.145"/>
+                    <RotateTransform Angle="0.278"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <ComboBox HorizontalAlignment="Left" Margin="126,79,0,0" VerticalAlignment="Top" Width="194" Height="25" Name="txtAge" ForceCursor="True" TextBlock.FontSize="16">
+            <ComboBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.BorderBrush>
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF565050" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,126,0,0" TextWrapping="Wrap" Text="рост, см" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="27" Width="115" FontSize="16">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.145"/>
+                    <RotateTransform Angle="0.278"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,176,0,0" TextWrapping="Wrap" Text="вес, кг" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="29" Width="115" FontSize="16">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.145"/>
+                    <RotateTransform Angle="0.278"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,226,0,0" TextWrapping="Wrap" Text="телефон" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="23" Width="115" FontSize="16">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.145"/>
+                    <RotateTransform Angle="0.278"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,277,0,0" TextWrapping="Wrap" Text="пароль" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="27" Width="115" FontSize="16">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.145"/>
+                    <RotateTransform Angle="0.278"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox  HorizontalAlignment="Left" Margin="126,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="30" Name="txtName" FontSize="16" TextBlock.FontSize="16">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Margin="126,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="25" Name="txtPhone" TextBlock.FontSize="16">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Margin="126,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" Height="29" Name="txtPassword" TextBlock.FontSize="16">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <ComboBox HorizontalAlignment="Left" Margin="126,129,0,0" VerticalAlignment="Top" Width="194" Height="24" Name="txtHeight" TextBlock.FontSize="16"/>
+        <ComboBox HorizontalAlignment="Left" Margin="126,179,0,0" VerticalAlignment="Top" Width="194" Height="25" Name="txtWeight" TextBlock.FontSize="16"/>
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="200,374,0,0" VerticalAlignment="Top" Height="30" Width="165" FontSize="16" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Name="ButtonReg" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,327,0,0" TextWrapping="Wrap" Text="роль" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="27" Width="115" FontSize="16">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.145"/>
+                    <RotateTransform Angle="0.278"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <ComboBox HorizontalAlignment="Left" Margin="126,330,0,0" VerticalAlignment="Top" Width="194" Height="24" x:Name="txtRole" TextBlock.FontSize="16" AutomationProperties.Name="txtRole"/>
+
+    </Grid>
+</Window>
